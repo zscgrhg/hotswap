@@ -5,7 +5,7 @@ package com.example.hot;
  */
 public class HowItWorks {
     public static void testStatic() {
-        System.out.println("static eee");
+        System.out.println("static eee 1073741824");
     }
     public void testReload(){
         System.out.println("ops12");
@@ -14,7 +14,7 @@ public class HowItWorks {
         while (true){
             new HowItWorks().testReload();
             testStatic();
-            System.out.println("static ttt");
+            System.out.println("this is from main oops111");
             Thread.sleep(2000L);
         }
     }

@@ -1,0 +1,24 @@
+<project name="hello" default="install">
+
+    <property name="BYTEMAN_HOME" value="byteman"/>
+    <target name="uninstall">
+        <java classname="org.jboss.byteman.agent.submit.Submit" failonerror="false">
+            <classpath path="${BYTEMAN_HOME}\lib\byteman-submit.jar"/>
+            <arg line="-u"/>
+            <arg line="thread.btm"/>
+        </java>
+    </target>
+    <target name="uninstallAll">
+        <java classname="org.jboss.byteman.agent.submit.Submit" failonerror="false">
+            <classpath path="${BYTEMAN_HOME}\lib\byteman-submit.jar"/>
+            <arg line="-u"/>
+        </java>
+    </target>
+    <target name="install">
+        <java classname="org.jboss.byteman.agent.submit.Submit">
+            <classpath path="${BYTEMAN_HOME}\lib\byteman-submit.jar"/>
+            <arg line="-l"/>
+            <arg line="thread.btm"/>
+        </java>
+    </target>
+</project>

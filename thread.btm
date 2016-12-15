@@ -1,0 +1,15 @@
+RULE rule1
+CLASS HowItWorks
+METHOD testStatic()
+AT ENTRY
+IF true
+DO traceln("*** start for thread: ")
+ENDRULE
+
+RULE rule1
+CLASS HowItWorks
+METHOD testStatic()
+AT ENTRY
+IF true
+DO traceln("*** start for thread: ")
+ENDRULE
