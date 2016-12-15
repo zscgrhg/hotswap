@@ -3,13 +3,17 @@ CLASS HowItWorks
 METHOD testStatic()
 AT ENTRY
 IF true
-DO traceln("*** start for thread: ")
+DO
+openTrace("C", "stack1.log");
+traceln("C"," accenture ")
 ENDRULE
 
-RULE rule1
+RULE rule2
 CLASS HowItWorks
 METHOD testStatic()
 AT ENTRY
 IF true
-DO traceln("*** start for thread: ")
+DO
+openTrace("C", "stack1.log");
+traceln("C"," 2012 ")
 ENDRULE

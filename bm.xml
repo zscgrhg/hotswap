@@ -8,7 +8,7 @@
             <arg line="thread.btm"/>
         </java>
     </target>
-    <target name="uninstallAll">
+    <target name="clear">
         <java classname="org.jboss.byteman.agent.submit.Submit" failonerror="false">
             <classpath path="${BYTEMAN_HOME}\lib\byteman-submit.jar"/>
             <arg line="-u"/>
