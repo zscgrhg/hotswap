@@ -19,6 +19,7 @@
             <classpath path="${BYTEMAN_HOME}\lib\byteman-submit.jar"/>
             <arg line="-l"/>
             <arg line="thread.btm"/>
+            <arg line="another.btm"/>
         </java>
     </target>
 </project>
