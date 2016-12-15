@@ -1,0 +1,10 @@
+<project name="hello" default="build">
+    <target name="start">
+        <java classname="com.example.hot.HowItWorks" fork="true">
+            <jvmarg line="-noverify"/>
+            <jvmarg line="-javaagent:${basedir}/lib/springloaded-1.2.6.RELEASE.jar"/>
+           <classpath path="build\classes\main" />
+        </java>
+    </target>
+    <target name="build"/>
+</project>
